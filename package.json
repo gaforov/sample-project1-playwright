@@ -1,0 +1,16 @@
+{
+  "name": "playwright-e2e-framework",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "playwright test",
+    "test:qa": "ENV=qa npx playwright test",
+    "test:dev": "ENV=dev npx playwright test",
+    "clean:artifacts": "ts-node clean-artifacts.ts"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.30.0",
+    "@types/node": "^22.14.1",
+    "dotenv": "^16.0.3",
+    "typescript": "^4.8.4"
+  }
+}
